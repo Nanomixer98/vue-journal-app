@@ -29,7 +29,7 @@
     ></textarea>
   </div>
 
-  <Fab />
+  <Fab icon-name="fa-save" />
 
   <img
     src="https://s.yimg.com/ny/api/res/1.2/NO32AnKeYxKJlrw5RKk2eg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2022-05/c86d1780-d79e-11ec-97ff-f8cb09fc00e6"
