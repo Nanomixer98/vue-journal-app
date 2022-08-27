@@ -1,5 +1,12 @@
 # journal
 
+# Leasons learned
+|Vuex|OptionsApi|   |
+|---|---|---|
+|actions|async methods|   |
+|getters|computed|   |
+|mutations|methods|   |
+
 ## Project setup
 ```
 npm install
