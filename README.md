@@ -7,6 +7,9 @@
 |getters|computed|   |
 |mutations|methods|   |
 
+- Send props to component on route definition
+- Use spread operator to create a new object to prevent modify state directly
+
 ## Project setup
 ```
 npm install

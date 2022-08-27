@@ -40,9 +40,33 @@
 
 <script>
 import { defineAsyncComponent } from "vue";
+import { mapGetters } from "vuex";
+
 export default {
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+  },
+
   components: {
     Fab: defineAsyncComponent(() => import("../components/FabComponent.vue")),
+  },
+
+  computed: {
+    ...mapGetters("journal", ["getEntryById"]),
+  },
+
+  methods: {
+    loadEntry() {
+      console.log(this.getEntryById(this.id));
+      return this.getEntryById(this.id);
+    },
+  },
+
+  created() {
+    this.loadEntry();
   },
 };
 </script>
