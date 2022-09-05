@@ -3,11 +3,12 @@
 # Leasons learned
 |Vuex|OptionsApi|   |
 |---|---|---|
-|actions|async methods|   |
+|state|computed|   |
 |getters|computed|   |
+|actions|async methods|   |
 |mutations|methods|   |
 
-- Send props to component on route definition
+- Send props to componjent on route definition
 - Use spread operator to create a new object to prevent modify state directly
 
 ## Project setup
