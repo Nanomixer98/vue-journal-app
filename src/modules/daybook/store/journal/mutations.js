@@ -12,6 +12,6 @@ export const updateEntry = ( state, updatedEntry ) => {
     state.entries[entryIdx] = updatedEntry
 }
 
-export const addEntry = (/*  state  */) => {
-
+export const addEntry = ( state, newEntry ) => {
+   state.entries = [newEntry, ...state.entries]
 }
