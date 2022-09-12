@@ -1,5 +1,4 @@
 // export const myMutation = ( state ) => {
-
 // }
 
 export const setEntries = ( state, entries ) => {
@@ -14,4 +13,8 @@ export const updateEntry = ( state, updatedEntry ) => {
 
 export const addEntry = ( state, newEntry ) => {
    state.entries = [newEntry, ...state.entries]
+}
+
+export const deleteEntry = ( state, deltedEntryId ) => {
+    state.entries = state.entries.filter(( entry ) => entry.id !== deltedEntryId);
 }
