@@ -27,7 +27,7 @@ describe('Pruebas en el FAB component', () => {
 
         $btn.trigger('click')
         // console.log(wrapper.emitted('on:click'))
-        expect(wrapper.emitted('on:click').length).toBe(1)
+        expect(wrapper.emitted('on:click')).toHaveLength(1)
     })
 
 })

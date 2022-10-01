@@ -62,6 +62,8 @@ import getDayMonthYear from "../helpers/getDayMonthYear";
 import uploadImage from "../helpers/uploadImage";
 
 export default {
+  name: "EntryView",
+
   props: {
     id: {
       type: String,
