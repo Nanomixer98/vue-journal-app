@@ -10,6 +10,7 @@
 
 - Send props to componjent on route definition
 - Use spread operator to create a new object to prevent modify state directly
+- Test router children
 
 ## Project setup
 ```
