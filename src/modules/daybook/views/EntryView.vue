@@ -119,7 +119,7 @@ export default {
     },
 
     async saveEntry() {
-      new Swal({
+      new Swal.fire({
         title: "Espere por favor",
         allowOutsideClick: false,
       });
@@ -146,8 +146,9 @@ export default {
         showDenyButton: true,
         confirmButtonText: "Si, estoy seguro",
       });
+
       if (isConfirmed) {
-        new Swal({
+        new Swal.fire({
           title: "Espere por favor",
           allowOutsideClick: false,
         });
