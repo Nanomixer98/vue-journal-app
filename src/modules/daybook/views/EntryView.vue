@@ -119,7 +119,7 @@ export default {
     },
 
     async saveEntry() {
-      new Swal.fire({
+      Swal.fire({
         title: "Espere por favor",
         allowOutsideClick: false,
       });
