@@ -148,7 +148,7 @@ export default {
       });
 
       if (isConfirmed) {
-        new Swal.fire({
+        Swal.fire({
           title: "Espere por favor",
           allowOutsideClick: false,
         });
