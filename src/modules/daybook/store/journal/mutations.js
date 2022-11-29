@@ -6,7 +6,7 @@ export const setEntries = ( state, entries ) => {
     state.isLoading = false
 }
 
-export const updateEntry = ( state, updatedEntry ) => {
+export const updateEntry = (state, updatedEntry) => {
     const entryIdx = state.entries.findIndex(entry => entry.id == updatedEntry.id)
     state.entries[entryIdx] = updatedEntry
 }
