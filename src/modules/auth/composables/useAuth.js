@@ -1,4 +1,5 @@
 // import { ref } from "vue";
+import { computed } from 'vue';
 import { useStore } from 'vuex';
 
 const useAuth = () => {
@@ -8,13 +9,24 @@ const useAuth = () => {
         // console.log(user);
         const resp = await store.dispatch('auth/createUser', user)
         return resp
-        // return {
-        //     ok: false, message: 'EMAIL_EXISTS'
-        // }
+    }
+
+    const loginUser = async (user) => {
+        const resp = await store.dispatch('auth/signInUser', user)
+        return resp
+    }
+
+    const checkAuthStatus = async () => {
+        const resp = await store.dispatch('auth/checkAuthentication')
+        return resp
     }
 
     return {
-        createUser
+        checkAuthStatus,
+        createUser,
+        loginUser,
+
+        authStatus: computed(() => store.getters['auth/currentState'])
     };
 }
 
