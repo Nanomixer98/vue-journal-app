@@ -5,7 +5,7 @@
 | Vuex      | OptionsApi    | execution method |
 | --------- | ------------- | ---------------- |
 | state     | computed      |                  |
-| getters   | computed      |                  |
+| getters   | computed      | []               |
 | actions   | async methods | dispatch         |
 | mutations | methods       | commit           |
 
