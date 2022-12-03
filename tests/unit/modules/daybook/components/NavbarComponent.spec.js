@@ -2,6 +2,22 @@ import { shallowMount } from "@vue/test-utils";
 import Navbar from '@/modules/daybook/components/NavbarComponent';
 import createVuexStore from "@/../tests/unit/mock-data/mock-store";
 
+import {
+    VueRouterMock,
+    createRouterMock,
+    injectRouterMock,
+} from 'vue-router-mock'
+import { config } from '@vue/test-utils'
+
+// create one router per test file
+const router = createRouterMock()
+beforeEach(() => {
+    injectRouterMock(router)
+})
+
+// Add properties to the wrapper
+config.plugins.VueWrapper.install(VueRouterMock)
+
 describe('Pruebas en el Navbar component', () => {
 
     const store = createVuexStore({
