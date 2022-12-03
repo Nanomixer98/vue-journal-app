@@ -78,6 +78,19 @@ describe('Vuex: Pruebas en el auth-module', () => {
         expect(store.getters['auth/username']).toBe('Alexis')
     });
 
+    it('Getter: username not exists', () => {
+        const store = createVuexStore({
+            status: 'not-authenticated', // 'authenticated', 'not-authenticated', 'authenticating'
+            user: { email: 'alexis@nava.com' },
+            idToken: 'ABC-123',
+            refreshToken: 'XYZ-123'
+        })
+
+        // console.log(store.getters['auth/currentState']);
+        expect(store.getters['auth/currentState']).toBe('not-authenticated')
+        expect(store.getters['auth/username']).toBe('?')
+    });
+
     it('Action: createUser - Usuar already exists', async () => {
         const store = createVuexStore({
             status: 'not-authenticated', // 'authenticated', 'not-authenticated', 'authenticating'
