@@ -48,8 +48,8 @@ export default {
     const { loginUser } = useAuth();
 
     const loginForm = ref({
-      email: "nano@mix.com",
-      password: "123456",
+      email: "",
+      password: "",
     });
 
     return {
